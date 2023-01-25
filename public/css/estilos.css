@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ebebeb;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+
+
+.venta-empresas {
+    display: none;
+}
+
+
+
+/* ------------------- Inicio Medias Queries --------------------- */
+
+@media (max-width: 770px) {
+
+    
+
+    .hamburguer-button {
+        display: block;
+    }
+
+    .navbar-hidden {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 771px) {
+    
+    
+   
+
+    .favoritos {
+        display: none;
+    }
+
+    .carrito {
+        display: none;
+    }
+
+    .hamburguer-button {
+        display: none;
+    }
+
+    .navbar-hidden {
+        display: none;
+    }
+
+    .inicia-sesion {
+        font-size: 14px;
+    }
+
+    .mi-cuenta {
+        font-size: 14px;
+    }
+    .primer-texto {
+        justify-self: flex-end;
+    }
+
+    .promociones {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .favoritos {
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    .carrito {
+        display: inline-block;
+        font-size: 14px;
+    }
+
+   
+
+    .mi-cuenta {
+        font-size: 15px;
+    }
+
+    .inicia-sesion {
+        font-size: 15px;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .main-listas {
+        margin-left: 19vw;
+    }
+
+    .promociones {
+        display: inline;
+    }
+}

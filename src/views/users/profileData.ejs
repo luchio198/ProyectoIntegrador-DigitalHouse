@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit profile</title>
+    <%- include ('../partials/head') %>
+            
+  
+  
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/css/profileEdit.css" rel="stylesheet">
+
+ 
+</head>
+<body>
+    <!-- Contenido del Header -->
+<!-- header -->
+<%- include ('../partials/header') %>
+<!-- /header -->
+
+<main>
+    <section style="background-color: #eee;">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col">
+              <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+                <b><%= user.name %>, estos son tus datos:</b> 
+              </nav>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card mb-4">
+                <div class="card-body text-center">
+                  <img src="/img/users/<%= user.avatar %>" alt="avatar"
+                    class="rounded-circle img-fluid" style="width: 150px; height: 150px;">
+                  <h5 class="my-3"><%= user.name %> <%= user.apell %></h5>
+                  <p class="text-muted mb-4"><%= user.count %></p>
+                  <a href="/users/profileEdit" style="text-decoration: none;">
+                  <div class="d-flex justify-content-center mb-2">
+                    <button type="button" class="btn btn-dark">Editar</button>
+                  </div>
+                  </a>
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-lg-8">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Nombre</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0"><%= user.name %> <%= user.apell %></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Género</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0"><%= user.gen %></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Fecha de Nac.</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0"><%= user.nac %></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">País</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0"><%= user.count %></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Email</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0"><%= user.email %></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+</main>
+
+<!-- footer -->
+<%- include ('../partials/footer') %>
+<!-- /footer -->
+
+</body>
+</html>

@@ -1,0 +1,921 @@
+*{
+    box-sizing: border-box;
+}
+
+#producto-entero{
+    display: flex;
+    flex-direction: row;
+}
+#producto-entero{
+    width: 90vw;
+    height: 99vh;
+    border: 2px solid rgba( 0, 0, 0, 0.3);
+    margin: 19px auto 0;
+    padding: 0;
+}
+
+
+.fotos-producto{
+    display: flex;
+    flex-direction: column;
+
+}
+.fotos-producto{
+    margin-left: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+}
+.fotos-producto .fotos-izq{
+    width: 162px;
+    height: 130px;
+    border: 2px solid black;
+    margin: 4px 0 0 0;
+}
+.fotos-producto-grande{
+    margin-top: 74px;
+    margin-left: 5px;
+}
+.fotos-derecha{
+    width: 563px;
+    height: 532px;
+    border: 2px solid black;
+}
+.nombre-producto{
+ 
+    width: 635px ;
+    height: 50px;
+    margin-left: 120px;
+    margin-top: 74px;
+}
+.nombre-productos{
+    margin:auto 0 auto 10px;
+    text-decoration:underline
+}
+
+#div-boton-x-producto{
+   text-align: right;
+   margin-left: 126px;
+   
+}
+
+
+.div-boton-comprar{
+    margin-top: 8px;
+}
+#boton-comprar{
+    width: 110% ;
+    border-radius: 7px;
+
+}
+.div-boton-carrito{
+    margin-top: 7px;
+
+  
+}
+#boton-carrito{
+    width: 110% ;
+    border-radius: 7px;
+
+    
+}
+#cantidad-productos{
+    margin-bottom: 8px;
+    width: 205px;
+}
+#icono-compartir{
+    display: none;   
+    margin-top: 10px;
+    font-size: 2em;
+}
+.compartir-cuotas{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.calcular-cuotas{
+    display: none;
+    margin-top: 15px;
+}
+.precio-producto{
+    margin-top: 283px;
+    margin-bottom: 48px;
+}
+
+.retiro-envio{
+    display: flex;
+    flex-direction: row;
+    
+}
+.retiro-envio{
+    margin-top: 10%;
+}
+#boton-envio-retiro{
+   display: none;
+    width: 100%;
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+#boton-medios-pago{
+    display: none;
+    width: 70% ;
+    text-align: left;
+    margin-left: 8px;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+.div-flecha-boton{
+    text-align: right;
+    margin-top: -24px;
+}
+.bn35 {
+    display: none;
+    text-decoration: underline;
+    font-size: small;
+    margin-top: 12px;
+    margin-left: 1px;
+  }
+  .editar-eliminar{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+  }
+  .editar-eliminar{
+    margin-top: 13px;
+  }
+  #boton-editar-eliminar{
+    width: 100%;
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 7px;
+    color: black;
+}
+.retiro{
+    display: none;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+}
+.retiro{
+    margin-top: 7px;
+}
+
+.swal2-popup {
+    font-size: 0.7rem !important;
+    font-family: Georgia, serif;
+  }
+
+  @media only screen and (max-width: 480px) and (min-width: 370px){
+   
+      #producto-entero{
+      
+        width: 99vw;
+        height: 99vh;
+      
+        margin: 19px 0 0 2px  ;
+        padding: 0;
+    }
+      .fotos-producto{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7px;
+        margin-bottom: 70px;
+      }
+      .fotos-producto .fotos-izq{
+        display: none;
+        width: 13vw;
+        height: 8vh
+
+    }
+      .fotos-derecha{
+          width: 60vw;
+          height:30%;
+         
+          
+      }
+      .fotos-producto-grande{
+        margin-top: 11px;
+        margin-left: 4px;
+    }
+    .nombre-producto{
+        margin-left: 20px;
+        margin-top: 74px;
+    }
+    .nombre-productos{
+        margin:-61px 0 auto -2px;
+        text-decoration:underline;
+        font-size: small;
+    }
+    .precio-producto{
+        margin-top: 103px;
+        margin-bottom: 31px;
+        margin-left: -17px;
+    }
+    #cantidad-productos{
+        margin-bottom: 8px;
+        width: 25px;
+    }
+  
+    #boton-comprar{
+        width: 80vw ;
+        border-radius: 7px;
+        margin-top: 27px;
+        margin-left: auto;
+    
+    }
+    .div-boton-carrito{
+        margin-top: 7px;
+        margin-left: 2%;
+    
+      
+    }
+    #boton-carrito{
+        width: 80vw ;
+        border-radius: 7px;
+    
+        
+    }
+    #boton-medios-pago{
+        display: none;
+    }
+    .compartir-cuotas{
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .boton-retiro{
+        display: none;
+    }
+    
+   
+      #boton-editar-eliminar{
+        display: none;
+      }
+      .bn35{
+        display: none;
+      }
+      #boton-envio-retiro{
+      display: none;
+      }
+    
+     .retiro-envio{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+
+    }
+    .retiro-envio{
+        margin-top: 49px;
+       margin-left: 2px;
+       margin-bottom: -26px;
+
+    }
+    .boton-envio{
+        margin-left:11px;
+    }
+    .boton-retiro{
+        margin-left: -67vw;
+    }
+    #boton-envio-retiro{
+        width: 45vw;
+        text-align: left;
+        border: 2px solid black;
+        border-radius: 7px;
+    }
+    .div-boton-comprar{
+        margin-left: -71%;
+    }
+    .div-boton-carrito{
+        margin-left: -71%;
+    }
+    #boton-medios-pago{
+        width: 96vw ;
+        text-align: left;
+        border: 2px solid black;
+        border-radius: 7px;
+       
+    }
+    .div-flecha-boton{
+        text-align: right;
+        margin-top: -24px;
+    }
+    .bn35 {
+        text-decoration: underline;
+        font-size: small;
+        margin-top: 12px;
+        margin-left: 1px;
+      }
+    #div-boton-x-producto{
+        display: none;
+    } 
+    .Descripcion{
+        display: none;
+    }
+    #precio-descuento{
+        display: flex;
+        flex-direction: row;
+    }
+    #precio-descuento{
+        margin-left: -1%;
+        
+       
+    }
+    .precio-producto-descuento{
+        text-decoration: line-through gray;
+        font-size: large;
+    }
+    .descuento{
+        font-size: large;
+    }
+    .barra{
+        font-size: large;
+    }
+  }
+@media only screen and (max-width: 780px) and (min-width: 480px){
+    
+    
+    #boton-medios-pago{
+        display: none;
+    }
+    .compartir-cuotas{
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .boton-retiro{
+        display: none;
+    }
+    
+   
+      #boton-editar-eliminar{
+
+        width: 90%;
+        margin: 0 auto 0 -109%;
+    
+      }
+      .bn35{
+        display: none;
+      }
+      #boton-envio-retiro{
+      display: none;
+      }
+    
+    
+      #producto-entero{
+      
+        width: 98%;
+        height: 99vh;
+      
+        margin: 19px 0 0 2px  ;
+        padding: 0;
+    }
+      .fotos-producto{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7px;
+        margin-bottom: 70px;
+      }
+      .fotos-producto .fotos-izq{
+        display: none;
+        width: 13vw;
+        height: 8vh
+
+    }
+      .fotos-derecha{
+          width: 49vw;
+          height:33.6vh;
+         
+          
+      }
+      .fotos-producto-grande{
+        margin-top: 11px;
+        margin-left: 4px;
+    }
+    .nombre-producto{
+        margin-left: 20px;
+        margin-top: 74px;
+    }
+    .nombre-productos{
+        margin:-61px 0 auto -2px;
+        text-decoration:underline;
+        font-size: small;
+    }
+    .precio-producto{
+        margin-top: 2%;
+        margin-bottom: 24%;
+        margin-left: -3%;
+    }
+    #cantidad-productos{
+        margin-bottom: 8px;
+        width: 80%;
+        margin-top: 5%;
+        margin-left: -61%;
+    }   
+    .div-boton-comprar{
+        margin-top: 9%;
+        margin-left: -61%;
+    }
+    #boton-comprar{
+        width: 80vw ;
+        border-radius: 7px;
+    
+    }
+    .div-boton-carrito{
+        margin-top: 7px;
+        margin-left: -61%;
+    
+      
+    }
+    #boton-carrito{
+        width: 80vw ;
+        border-radius: 7px;
+    
+        
+    }
+    .compartir-cuotas{
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    
+     .retiro-envio{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+
+    }
+    .retiro-envio{
+        margin-top: 49px;
+       margin-left: 2px;
+       margin-bottom: -26px;
+
+    }
+    .boton-envio{
+        margin-left:11px;
+    }
+    .boton-retiro{
+        margin-left: -64vw;
+    }
+    #boton-envio-retiro{
+        width: 44vw;
+        text-align: left;
+        border: 2px solid black;
+        border-radius: 7px;
+    }
+    
+   
+    #boton-medios-pago{
+        width: 87vw ;
+        text-align: left;
+        border: 2px solid black;
+        border-radius: 7px;
+       
+    }
+    .div-flecha-boton{
+        text-align: right;
+        margin-top: -24px;
+    }
+    .bn35 {
+        text-decoration: underline;
+        font-size: small;
+        margin-top: 12px;
+        margin-left: 1px;
+      }
+    #div-boton-x-producto{
+        display: none;
+    }
+    .Descripcion{
+        display: none;
+       
+    }
+    #precio-descuento{
+        display: flex;
+        flex-direction: row;
+    }
+    #precio-descuento{
+        margin-left: -1%;
+        
+       
+    }
+    .precio-producto-descuento{
+        text-decoration: line-through gray;
+        font-size: large;
+    }
+    .descuento{
+        font-size: large;
+    }
+    .barra{
+        font-size: large;
+    }
+    
+}
+@media only screen and (max-width: 1280px) and (min-width: 781px){
+   
+    #boton-medios-pago{
+        display: none;
+    }
+    .compartir-cuotas{
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .boton-retiro{
+        display: none;
+    }
+    
+   
+    .editar-eliminar{
+        display: flex;
+        flex-direction:row ;
+        justify-content: space-around;
+        
+      }
+      .editar-eliminar{
+        margin-top: 8%;
+        margin-left: -29%;
+      }
+      #boton-editar-eliminar{
+        width: 110%;
+        text-align: left;
+        border: 2px solid black;
+        border-radius: 7px;
+        color: black;
+    }
+      .bn35{
+        display: none;
+      }
+      #boton-envio-retiro{
+      display: none;
+      }
+    
+    
+      #producto-entero{
+      
+        width: 99vw;
+        height: 99vh;
+        margin: 19px 0 0 2px  ;
+        padding: 0;
+    }
+      .fotos-producto{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7px;
+        margin-bottom: 70px;
+      }
+      .fotos-producto .fotos-izq{
+       display: none;
+        width: 13vw;
+        height: 8vh;        
+        margin-left: 5%;
+
+    }
+      .fotos-derecha{
+          width: 100%;
+          height:38%;
+         
+          
+      }
+      .fotos-producto-grande{
+        margin-top: 11px;
+        margin-left: 2%;
+    }
+    .nombre-producto{
+        margin-left: 20px;
+        margin-top: 74px;
+    }
+    .nombre-productos{
+        margin:-61px 0 auto -2px;
+        text-decoration:underline;
+        font-size: x-large;
+    }
+    .precio-producto{
+        margin-top: -1%;
+        margin-bottom: 3%;
+        margin-left: -1%;
+    }
+    #cantidad-productos{
+        margin-bottom: 8px;
+        width: 60%;
+    }
+    .div-boton-comprar{
+        margin-top: 11%;
+        margin-left: 0%;
+    }
+    #boton-comprar{
+        width: 70% ;
+        border-radius: 7px;
+    
+    }
+    .div-boton-carrito{
+        margin-top: 7px;
+        margin-left: 0%;
+    
+      
+    }
+    #precio-descuento{
+        display: flex;
+        flex-direction: row;
+    }
+    #precio-descuento{
+        margin-left: -1%;
+        margin-top: 10%;
+       
+    }
+    .precio-producto-descuento{
+        text-decoration: line-through gray;
+        font-size: large;
+    }
+    .descuento{
+        font-size: large;
+    }
+    .barra{
+        font-size: large;
+    }
+   
+    #boton-carrito{
+        width: 70% ;
+        border-radius: 7px;
+    
+        
+    }
+    .compartir-cuotas{
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+   
+     .retiro-envio{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+
+    }
+    .retiro-envio{
+        margin-top: 49px;
+       margin-left: 2vw;
+       margin-bottom: -18vh;
+
+    }
+    .boton-envio{
+        margin-left:11px;
+    }
+    .boton-retiro{
+        margin-left: -64vw;
+    }
+    #boton-envio-retiro{
+        width: 44vw;
+        text-align: left;
+        border: 2px solid black;
+        border-radius: 7px;
+    }
+  
+    
+    
+    #boton-medios-pago{
+        width: 89vw ;
+        text-align: left;
+        border: 2px solid black;
+        border-radius: 7px;
+       
+    }
+    .div-flecha-boton{
+        text-align: right;
+        margin-top: -24px;
+    }
+    .bn35 {
+        text-decoration: underline;
+        font-size: small;
+        margin-top: 12px;
+        margin-left: 1px;
+      }
+    #div-boton-x-producto{
+        display: none;
+    }
+    .Descripcion{
+        margin-top: 1%;
+        margin-left: 0%;
+        font-size: medium;
+    }
+    
+}
+@media  (min-width: 1281px){
+
+    #producto-entero{
+        display: flex;
+        flex-direction: row;
+    }
+    #producto-entero{
+        width: 97%;
+        height: 100vh;
+        border: 2px solid rgba( 0, 0, 0, 0.3);
+        margin: 19px auto 0;
+        padding: 0;
+    }
+   
+    .compartir-cuotas{
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .editar-eliminar{
+        display: flex;
+        flex-direction:row ;
+        justify-content: space-around;
+        
+      }
+      .editar-eliminar{
+        margin-top: 8%;
+        margin-left: -6%;
+      }
+      #boton-editar-eliminar{
+        width: 100%;
+        text-align: left;
+        border: 2px solid black;
+        border-radius: 7px;
+        color: black;
+    }
+    #precio-descuento{
+        display: flex;
+        flex-direction: row;
+    }
+    #precio-descuento{
+        margin-left: -11%;
+        margin-top: 10%;
+       
+    }
+    .precio-producto-descuento{
+        text-decoration: line-through gray;
+        font-size: large;
+    }
+    .descuento{
+        font-size: large;
+    }
+    .barra{
+        font-size: large;
+    }
+   
+   
+      
+      .bn35{
+        display: none;
+      }
+      #boton-envio-retiro{
+      display: none;
+      }
+    
+    
+    .fotos-producto{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .fotos-producto{
+        margin-left: 1vw;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    
+    }
+    .fotos-producto .fotos-izq{
+        width: 162px;
+        height: 130px;
+        border: 2px solid black;
+        margin: 4px 0 0 0;
+    }
+    .fotos-producto-grande{
+        margin-top: 74px;
+        margin-left: 5px;
+    }
+    .fotos-derecha{
+        width: 563px;
+        height: 532px;
+        border: 2px solid black;
+    }
+    .nombre-producto{
+     
+        width: 635px ;
+        height: 50px;
+        margin-left: 10%;
+        margin-top: 74px;
+    }
+    .nombre-productos{
+        margin:auto 0 auto -11%;
+        text-decoration:underline
+    }
+    
+    #div-boton-x-producto{
+       text-align: right;
+       margin-left: 126px;
+       
+    }
+    
+    
+    .div-boton-comprar{
+        margin-top: 2%;
+        margin-left: 1%;
+        
+    }
+    #boton-comprar{
+        width: 90% ;
+        border-radius: 7px;
+    
+    }
+    .div-boton-carrito{
+        margin-top: 2px;
+        margin-left: 1%;
+    
+      
+    }
+    #boton-carrito{
+        width: 90%;
+        border-radius: 7px;
+    
+        
+    }
+    #cantidad-productos{
+        margin-bottom: 8px;
+        width: 110%;
+        margin-left: -10%;
+    }
+    #icono-compartir{
+        margin-top: 10px;
+        font-size: 2em;
+        margin-left: -7vw;
+       
+    }
+    .compartir-cuotas{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    
+    .calcular-cuotas{
+        margin-top: 15px;
+        display: none;
+    }
+    .precio-producto{
+        margin-top: 0%;
+        margin-bottom: 48px;
+        margin-left: -11%;
+    }
+    .Descripcion{
+        margin-top: 5%;
+        margin-left: -11%;
+    }
+    .retiro-envio{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    .retiro-envio{
+        margin-top: 9px;
+       margin-left: -7vw;
+       margin-bottom: -18vh;
+    }
+    .boton-envio{
+        margin-left: 3px;
+    }
+    #boton-envio-retiro{
+        width: 17vw;
+        text-align: left;
+        border: 2px solid black;
+        border-radius: 7px;
+    }
+    #boton-medios-pago{
+        display: none;
+        width: 34.3vw ;
+        text-align: left;
+        border: 2px solid black;
+        border-radius: 7px;
+        margin-top: 18vh;
+        
+    }
+    .div-flecha-boton{
+        text-align: right;
+        margin-top: -24px;
+    }
+    .bn35 {
+        text-decoration: underline;
+        font-size: small;
+        margin-top: 12px;
+        margin-left: 7vw;
+      }
+    #boton-x-producto{
+        display: none;
+    }
+    .div-boton-carrito #boton-medios-pago{
+        display: none;
+    }
+    
+
+
+
+
+
+
+}

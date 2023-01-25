@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/apis.css">
+    <%- include ('./partials/head') %>
+</head>
+<!-- 110vh #03264C-->
+<body style="background-color: black;">
+  <a href="/"><img style="width: 7%; margin-left: 14px; margin-top: 17px;" src="/img/products/logoo.jpg"> </img></a>
+ 
+<div class="rounded-3" style="width: 90%; height: auto; margin-top: 2%; margin-bottom: 2%; margin-left: auto; margin-right: auto; background-color: darkgray">
+  
+  <div class="container-fluid d-flex justify-content-center">
+    <div class="row">
+      <div class="col">
+        <h2 style="color: white;">API ENDPOINTS DICONS</h2>
+        <table class="table table-dark">
+          
+          <thead>
+            <tr>
+              <th>Documentación</th>
+              <th>Instrucciones</th>
+              <th>Endpoints</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>PRODUCTOS</b></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="fila">
+              <td>Todos los Productos</td>
+              <td>Para traer todos los productos ingresá:</td>
+              <td><a href="http://localhost:3002/products/traerProductos" target="_blank"><p>"http://localhost:3002/products/traerProductos"</p></a></td>
+            </tr>
+            <tr>
+              <td>Productos por Categoría</td>
+              <td>Para traer todos los Productos por Categoría ingresá:</td>
+              <td><a href="http://localhost:3002/products/traerProductosPorCategoria" target="_blank"> <p>"http://localhost:3002/products/traerProductosPorCategoria"</p></a></td>
+            </tr>
+            <tr>
+              <td>Productos por ID</td>
+              <td>Para traer un producto por su id ingresá: </td>
+              <td>
+                <p>"http://localhost:3002/products/traerProductoPorId/{id}"</p> 
+                <a href="http://localhost:3002/products/traerProductoPorId/19" target="_blank"> <p>"http://localhost:3002/products/traerProductoPorId/19"</p> </a> 
+              </td>
+            </tr>
+            <tr>
+              <td><b>USUARIOS</b></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Todos los usuarios</td>
+              <td>Para traer todos los usuarios ingresar: </td>
+              <td>
+                <a href="http://localhost:3002/users/traerUsuarios" target="_blank"> <p>"http://localhost:3002/users/traerUsuarios"</p> </a> 
+              </td>
+            </tr>
+            <tr>
+              <td>Usuarios por ID</td>
+              <td>Para buscar usuarios por id ingresar: </td>
+              <td>
+                <p>"http://localhost:3002/users/traerUsuarioPorId/{id}"</p> 
+                <a href="http://localhost:3002/users/traerUsuarioPorId/2" target="_blank"> <p>"http://localhost:3002/products/traerProductoPorId/2"</p> </a> 
+              </td>
+            </tr>
+          </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+</body>
+</html>

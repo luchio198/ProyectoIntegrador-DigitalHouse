@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <%- include ('../partials/head') %>
+         
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link rel="stylesheet" href="estilos.css">
+         
+         <title>Login</title>
+     </head>
+
+    <style>
+
+       
+        body{
+            background-image: url('/img/products/fondo.svg');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            font-family: 'Roboto';
+        
+        }
+
+        .bg{
+            background-color:black;
+            background-position: center center;
+            color: white;
+            align-content: center;
+        }
+        .bgs{
+            background-color: white;
+            background-position: center center;
+        }
+        .icon-white{
+            color: white;
+        }
+        .icon-black{
+            color: black;
+        }
+
+        
+    </style>
+           <link href="/css/validaciones.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container w-75 mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col-md-8 bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+                <div class="logo">
+                    <div class="text-end align-content-center">
+                        <img src="../public/img/logoDicons.jpg" width="100" alt="">
+                    </div>
+                    <span class="spanLogo">
+                        <a href="/"> <i class="fa-solid fa-arrow-left icon-white"></i></a>
+                      </span>
+                      <div class="contenedorLogin text-center mt-5"><br>
+                        <h1 id="h1Login" >Accede a tu cuenta Dicons con tu dirección de correo electrónico</h1>
+                      </div>      
+                </div>
+            </div>
+            <div class="col bgs p-5 rounded-end">
+                <span class="spanLogo">
+                    <a href="/"> <i class="fa-solid fa-arrow-left icon-black d-xl-none d-lg-none"></i></a>
+                  </span>
+                <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+                <div class="errores">
+                    <ul></ul>
+                </div>
+                <!--Login-->
+                <form action="login" method="POST"  id ="FormLogin"novalidate>
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" name="email" id ="email-login"required>
+                        <span></span>
+                        <br>
+                        
+                        <% if(locals.msg) { %>
+                            <div class="text-danger"><%= locals.msg %></div>
+                        <% } %>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" id="contraseña-login"required>
+                        <span></span>
+                        
+                        <span><a href="#">Recuperar Contraseña</a></span>
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="connected" id="connected" class="form-check-input">
+                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="sumbit" class="btn btn-secondary">Iniciar Sesión</button>
+                        
+                    </div><br>
+                    <div class="d-grid">
+                        <a href="/users/register" class="btn btn-dark active" role="button" aria-pressed="true">Crear una cuenta</a>
+                    </div>
+                     
+                    <div class="my-3">
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+    <script src="/js/validacionesLogin.js"></script>
+</body>
+</html>

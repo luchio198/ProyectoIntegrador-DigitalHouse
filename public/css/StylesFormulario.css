@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ebebeb;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+
+.venta-empresas {
+    display: none;
+}
+
+.primer-texto p a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+.form-label{
+    font-size: small;
+}
+
+
+div.errores{
+    color:red
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+  <%- include ('./partials/head') %>
+    
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/carrito.css" rel="stylesheet" >
+    <link href="/css/producto.css" rel="stylesheet" >
+    
+    <title > Carrito Dicons</title>
+  </head>
+
+<body>
+    
+  <!-- Contenido del Header -->
+  <%- include ('./partials/header') %>
+  
+
+  <div id="producto-entero">
+    <div class="fotos-producto">
+      <img class="fotos-izq" src="/img/products/<%= producto.image %>" alt="product image">
+      <img class="fotos-izq" src="/img/products/noImage.jpg">
+      <img class="fotos-izq" src="/img/products/noImage.jpg">
+      <img class="fotos-izq" src="/img/products/noImage.jpg">
+    </div>
+    <div class="fotos-producto-grande">
+      <img class="fotos-derecha" src="/img/products/<%= producto.image %>" alt="product image">
+    </div>
+  
+
+    <div class="nombre-producto">
+      <div class="x-nombre">
+        <h2 class="nombre-productos"> <%= producto.name %></h2>
+     </div>
+     <h2 class="precio-producto">$<%= producto.price %> <%= producto.discount %>% OFF</h2>
+     <select id="cantidad-productos"class="form-select" aria-label="Default select example">
+      <option selected> Cantidad:</option>
+      <option value="1">1 unidad</option>
+      <option value="2">2 unidades</option>
+      <option value="3">3 unidades</option>
+     </select>
+     <div class="div-boton-comprar">
+      <a href="/"><button id="boton-comprar"class="w3-button w3-black w3-round-small">Comprar ahora </button></a>
+     </div>
+     <div class="div-boton-carrito">
+      <a href="/"><button id="boton-carrito"class="w3-button w3-gray w3-round-small">Agregar al carrito </button></a>
+     </div>
+     <div class="compartir-cuotas">
+      <div>
+     <a href="x"><i id="icono-compartir" class="fa-sharp fa-solid fa-circle-nodes"></i></a> 
+    </div>
+    <div class="calcular-cuotas">
+      <a href="a">Calcular cuotas</a>
+    </div>
+    </div>
+    <div class="retiro-envio">
+      <div class="boton-retiro">
+      <a href="/"><button id="boton-envio-retiro"class="w3-button w3-white w3-round-small">Retiro en tienda <i class="fa-solid fa-chevron-right"></i></button></a>
+    </div>
+    <div class="boton-envio">
+    <a href="/"><button id="boton-envio-retiro"class="w3-button w3-white w3-round-small">Envio a domicilio  <i  class="fa-solid fa-chevron-right"></i></button></a>
+  </div>
+    </div>
+    <div class="div-boton-comprar">
+      <a href="/"><button id="boton-medios-pago"class="w3-button w3-white w3-round-small">Medios de pago    <i class="fa-solid fa-chevron-right"></i></button></a>
+     </div>
+     <div class="div-boton-carrito">
+      <a href="/"><button id="boton-medios-pago"class="w3-button w3-white w3-round-small">Stock en tiendas   <i class="fa-solid fa-chevron-right"></i></button></a>
+     </div>
+     <a href="/"><h4 class="bn35">Condiciones para cambios y devoluciones</h4></a>
+     <br>
+  </div>
+ 
+    <div id="div-boton-x-producto">
+    <button id="boton-x-producto"class="w3-button w3-black w3-round-small"><i class="fa-solid fa-x"></i></button>
+  </div>
+    <br>
+     </div>
+     
+   <!-- footer -->
+	<%- include ('./partials/footer') %>
+	<!-- /footer -->
+   </body>
+
+
+
+ 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit profile</title>
+    <%- include ('../partials/head') %>
+            
+  
+  
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/css/profileEdit.css" rel="stylesheet">
+
+ 
+</head>
+<body>
+    <!-- Contenido del Header -->
+<!-- header -->
+<%- include ('../partials/header') %>
+<!-- /header -->
+
+<main>
+    <div class="container products-wrapper">
+        <div class="row">
+            <div class="row pt-3">
+                <div class="col">
+                  <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-2">
+                    <b><%= user.name %>, estás editando tus datos:</b> 
+                  </nav>
+                </div>
+              </div>
+        </div>
+        <div class="col-12"> 
+            <form action="/users/profileData" method="POST" enctype="multipart/form-data" id="FormEdit" class="row mt-3">
+                    <div class="col-6">
+                        <label for="Name" class="form-label">Nombre</label>
+                        <input type="text"  name="name"  class="form-control" id="Name" value="<%= user.name %>" placeholder ="Ingresá tu nombre" required>
+                        <span></span>
+                        
+                    </div>
+                    <div class="col-6">
+                        <label for="apell" class="form-label">Apellido</label>
+                        <input type="text"  name="apell"  class="form-control" id="apell" value="<%= user.apell %>" placeholder ="Ingresá tu apellido" required>
+                        <span></span>
+                    </div>
+                    <div class="col-6">
+                        <label for="Nacimiento" class="form-label">Fecha de Nacimiento</label>
+                        <input type="date" name="nac" min =1900-01-01 max = 2022-01-01 class="form-control" id="Nacimiento" value="<%= user.nac %>" placeholder ="Fecha de Nacimiento"  required>
+                        
+                    </div>
+                    <div class="col-6">
+                        <label for="Country" class="form-label">País de residencia</label>
+                        <input type="text"  name="count" class="form-control" id="Country" value="<%= user.count %>" placeholder ="Ingresa pais de residencia" required>
+                        <span></span>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-radio"> <br>
+                            <label for="gen" class="form-genero-label"><h5>Genero</h5></label><br>
+                            <input type="radio" name="gen"  value="Masculino" id="Masculino"  checked required> Masculino
+                            <input type="radio" name="gen"  value="Femenino"  id="Femenino"> Femenino
+                            <input type="radio" name="gen"  value="Otro" id="Otro"> Otro
+                            
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6" style="margin-bottom: 20px;"> <br>
+                        <label for="avatar" class="form-genero-label">Cargá una imagen:</label><br>
+                        <input type="file" id="avatar" name="avatar" value="<%= user.avatar %>" required></input>
+                    </div>
+                    <div class="col-4"> <br> <br>
+                        <button type="button reset" class="btn btn-dark mb-3">Guardar cambios</button>
+                    </div>
+            </form>
+            
+        </div>
+
+    </div>
+</main>
+
+<!-- footer -->
+<%- include ('../partials/footer') %>
+<!-- /footer -->
+
+</body>
+</html>

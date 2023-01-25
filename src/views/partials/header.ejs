@@ -1,0 +1,57 @@
+<header class="main-header">
+
+  <div class="primer-texto">
+ 
+  <p><a style="text-decoration: none;" href="/documentacionApis">Documentación API</a></p>
+ </div>
+  <div class="main-header-top-bar">
+    <a href="/"><img class="logo-completo"src="/img/products/logoo.jpg"> </img></a>
+    
+    <nav class="barra-busqueda">
+      <div class="container-fluid">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar " aria-label="Search">
+          <button type="button" class="btn btn-outline-secondary"><span class="material-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+               </span></button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+   <nav class="main-listas">
+     <ul class="categorias">
+    <li><a href="#">Categorias <i class="fa-solid fa-angle-down"></i></a></li>
+  </ul>
+ 
+    <ul class="lista-izq">
+      <% if (locals.isLogged) { %>
+      <li class="boton-vender"><a href="/products/create"> Vender  </a></li>
+      <% } else { %>
+        <li><a href="/products/create" style="display: none;"> Vender  </a></li>
+        <% } %>
+      <li><a href="#">Historial</a></li>
+      <li><a href="/products/promociones">Promociones</a></li>
+      <li class="ayuda"><a href="#">Ayuda</a></li>
+     </ul>
+    
+    
+    <ul class="lista-derecha"style="z-index: 1;">
+      <% if (locals.isLogged) { %>
+       
+        <li><a href="/users/profile"><img class="imagen-perfil"src="/img/users/<%= locals.userLogged[0].avatar %>" style="border-radius: 100%; width: 30px; height: 30px; align-self: center;"> Mi Perfil </a> </li>
+        <li><a href="/products/carrito"><i class="fa-solid fa-cart-shopping"></i> Mi Carrito </a> </li>
+        <li><a href="/users/logout"><i class="fa-solid fa-right-to-bracket"></i> Cerrar Sesión </a> </li>
+        
+
+        </div>
+      <% } else { %>
+        <li><a href="/users/register"><i class="fa-solid fa-circle-user"></i> Crea tu cuenta </a> </li>
+        <li><a href="/users/login"><i class="fa-solid fa-right-to-bracket"></i> Inicia Sesión </a> </li>
+      <% } %>
+     
+    </ul>
+    
+   
+   </nav>
+</header>
